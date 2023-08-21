@@ -127,13 +127,13 @@ public class VideoTagRepository : IVideoTagRepository
             Video Video = new()
             {
                 Id = reader.GetInt32("id"),
-                Title = reader.GetString("title"),
-                OriginalTitle = reader.GetString("originalTitle"),
-                Synopsis = reader.GetString("synopsis"),
-                VideoYear = reader.GetInt16("VideoYear"),
+                Name = reader.GetString("name"),
+                Description = reader.GetString("description"),
+                UploadDate = reader.GetDateTime("uploaddate"),
                 Duration = reader.GetInt16("duration"),
                 AgeRating = reader.GetByte("ageRating"),
-                Image = reader.GetString("image")
+                Thumbnail= reader.GetString("thumbnail"),
+                VideoFile= reader.GetString("videofile")
             };
             Videos.Add(Video);
         }

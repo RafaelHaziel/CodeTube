@@ -16,9 +16,9 @@
                 <a asp-controller="Home" asp-action="Video" asp-route-id="@Video.Id" class="text-decoration-none">
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="@Video.Image">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="@Video.Thumbnail">
                             <div class="card-body">
-                                <p class="card-text text-center">@Video.Title</p>
+                                <p class="card-text text-center">@Video.Name</p>
                                 <div class="d-flex align-items-center mb-2">
                                     @foreach (Tag Tag in Video.Tags)
                                     {
